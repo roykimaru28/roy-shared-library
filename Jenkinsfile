@@ -7,7 +7,7 @@ def call('string repoUrl'){
        stages {
            stage("Tools initialization") {
                steps {
-                   sh 'ls'
+                   sh 'pwd'
                    sh 'java -version'
                }
            }
