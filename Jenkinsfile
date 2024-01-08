@@ -7,7 +7,7 @@ def call(String repoUrl){
        stages {
            stage("Tools initialization") {
                steps {
-                   sh 'pwd'
+                   sh 'whoami'
                    sh 'java -version'
                }
            }
@@ -19,7 +19,7 @@ def call(String repoUrl){
            }
            stage("to-test-maven") {
                steps {
-                   sh 'pwd'
+                   sh 'git status'
                }
            }
        }
